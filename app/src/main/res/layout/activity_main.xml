@@ -25,4 +25,10 @@
         android:layout_width="wrap_content"
         android:text="Navigate to Service Demo"/>
 
+    <Button
+        android:id="@+id/receiver_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Start Broadcast Service"/>
+
 </LinearLayout>

@@ -13,7 +13,6 @@ open class MyService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Toast.makeText(this, "Service Started", Toast.LENGTH_SHORT).show()
         player= MediaPlayer.create(this, Settings.System.DEFAULT_ALARM_ALERT_URI)
-        Toast.makeText(this, "Service Started", Toast.LENGTH_SHORT).show()
         player.isLooping = true;
         player.start()
         return START_STICKY

@@ -22,10 +22,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(secondPageIntent)
         }
 
+        // Service Demo
         val serNavBtn = findViewById<Button>(R.id.service_navigation_btn)
         serNavBtn.setOnClickListener{
             val serviceIntent = Intent(this, ServiceActivity::class.java)
             startActivity(serviceIntent)
+        }
+
+        val receiverBtn: Button = findViewById(R.id.receiver_btn)
+        receiverBtn.setOnClickListener {
+            sendBroadcast(Intent(this, MyReceiver::class.java))
         }
     }
 
